@@ -10,7 +10,7 @@ const refs = {
 }
 
 refs.form.addEventListener('submit', onFormSubmit);
-refs.message.addEventListener('input', throttle(onMessageInput, 500));
+refs.form.addEventListener('input', throttle(onMessageInput, 500));
 
 populateMessage();
 
